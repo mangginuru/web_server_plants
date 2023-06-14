@@ -7,7 +7,7 @@ import torchvision.transforms as transforms
 
 def get_model():
     model = EfficientNet.from_pretrained(model_name="efficientnet-b7", num_classes=20)
-    model.load_state_dict(torch.load('best_weights_b5_9.pt', map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load('best_weights_b7_9.pt', map_location=torch.device('cpu')))
     model.eval()
     return model
 
