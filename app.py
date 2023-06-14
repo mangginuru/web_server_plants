@@ -40,6 +40,7 @@ def product():
 		text = text["data"]
 		if not text:
 			return "검색 결과가 없습니다."
+		## 식물이 잘 검색 되지 않는 식물의 예외처리
 		if text == "시서스":
 			product_sysus = naver_searchAPI("시서스 식물")
 			return product_sysus
